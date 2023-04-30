@@ -7,6 +7,8 @@ public class PlayerAnimatorManager : MonoBehaviourPun
 {
     [SerializeField]
     private float directionDampTime = 0.25f;
+    [SerializeField]
+    private float movementSpeed = 3f;
     private Animator animator;
 
     private void Start() 
@@ -30,7 +32,9 @@ public class PlayerAnimatorManager : MonoBehaviourPun
             return;
         }
 
-        // deal with Jumping
+
+
+        //deal with Jumping
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         // only allow jumping if we are running.
         if (stateInfo.IsName("Base Layer.Run"))
@@ -44,6 +48,12 @@ public class PlayerAnimatorManager : MonoBehaviourPun
 
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+
+        // if (transform.position.y < 1000)
+        // {
+        //     transform.Translate(new Vector3(h * movementSpeed * Time.deltaTime, transform.position.y, v * movementSpeed * Time.deltaTime));
+        // }
+
         
         animator.SetFloat("Speed", h * h + v * v);    
         animator.SetFloat("Direction", h, directionDampTime, Time.deltaTime);

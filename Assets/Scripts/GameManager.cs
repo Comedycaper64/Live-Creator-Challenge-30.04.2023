@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 
 using UnityEngine;
@@ -6,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 using Photon.Pun;
 using Photon.Realtime;
+
+using TMPro;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
@@ -15,12 +16,15 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject playerPrefab;
 
     private FloorTile[] floorTiles;
+    
+    private TextMeshProUGUI colourText;
 
     private void Awake() 
     {
         Instance = this;    
         GameObject playArea = GameObject.FindGameObjectWithTag("Floor");
         floorTiles = playArea.GetComponentsInChildren<FloorTile>();
+        colourText = GameObject.FindGameObjectWithTag("ColourText").GetComponent<TextMeshProUGUI>();
     }
 
     private void Start() 
@@ -42,6 +46,33 @@ public class GameManager : MonoBehaviourPunCallbacks
                 Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
             }
         }    
+        StartCoroutine(GameLoop());
+    }
+
+    private IEnumerator GameLoop()
+    {
+        colourText.text = "Current Colour: ???";
+        ResetFloorTiles();
+        yield return new WaitForSeconds(2f);
+        FloorTile.FloorColour currentColour = (FloorTile.FloorColour) Random.Range(0, 3);
+        colourText.text = "Current Colour: " + currentColour.ToString();
+        yield return new WaitForSeconds(2f);
+        foreach (FloorTile tile in floorTiles)
+        {
+            tile.LowerTile(currentColour);
+        }
+        yield return new WaitForSeconds(2f);
+
+        StartCoroutine(GameLoop());
+    }
+
+    private void ResetFloorTiles()
+    {
+        foreach(FloorTile tile in floorTiles)
+        {
+            tile.transform.position = new Vector3(tile.transform.position.x, -0.5f, tile.transform.position.z);
+            tile.StopLowering();
+        }
     }
 
     void LoadArena()

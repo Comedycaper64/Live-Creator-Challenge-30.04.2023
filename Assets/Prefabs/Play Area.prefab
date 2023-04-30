@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 20295053}
   - component: {fileID: 20295052}
   - component: {fileID: 20295055}
+  - component: {fileID: 1980411041507867491}
+  - component: {fileID: 20295057}
   m_Layer: 0
   m_Name: Floor (9)
   m_TagString: Untagged
@@ -110,6 +112,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 0
+  lowerSpeed: 2
+--- !u!114 &1980411041507867491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20295050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &20295057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20295050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &195718787
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +165,8 @@ GameObject:
   - component: {fileID: 195718790}
   - component: {fileID: 195718789}
   - component: {fileID: 195718792}
+  - component: {fileID: 3000013783746249150}
+  - component: {fileID: 195718794}
   m_Layer: 0
   m_Name: Floor (12)
   m_TagString: Untagged
@@ -220,6 +264,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 0
+  lowerSpeed: 2
+--- !u!114 &3000013783746249150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195718787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &195718794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195718787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 3000013783746249150}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &551216635
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +318,8 @@ GameObject:
   - component: {fileID: 551216638}
   - component: {fileID: 551216637}
   - component: {fileID: 551216640}
+  - component: {fileID: 8076925312726033840}
+  - component: {fileID: 551216642}
   m_Layer: 0
   m_Name: Floor (7)
   m_TagString: Untagged
@@ -330,6 +417,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 3
+  lowerSpeed: 2
+--- !u!114 &8076925312726033840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551216635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &551216642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551216635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &605656444
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +470,8 @@ GameObject:
   - component: {fileID: 605656447}
   - component: {fileID: 605656446}
   - component: {fileID: 605656449}
+  - component: {fileID: 3948740610417810004}
+  - component: {fileID: 605656451}
   m_Layer: 0
   m_Name: Floor (10)
   m_TagString: Untagged
@@ -440,6 +569,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 2
+  lowerSpeed: 2
+--- !u!114 &3948740610417810004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605656444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &605656451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605656444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &629904239
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +622,8 @@ GameObject:
   - component: {fileID: 629904242}
   - component: {fileID: 629904241}
   - component: {fileID: 629904244}
+  - component: {fileID: 3965428628674109618}
+  - component: {fileID: 629904246}
   m_Layer: 0
   m_Name: Floor (11)
   m_TagString: Untagged
@@ -550,6 +721,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 1
+  lowerSpeed: 2
+--- !u!114 &3965428628674109618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629904239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &629904246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629904239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 3965428628674109618}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1207969513
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +775,8 @@ GameObject:
   - component: {fileID: 1207969516}
   - component: {fileID: 1207969515}
   - component: {fileID: 1207969518}
+  - component: {fileID: 5665329421859200052}
+  - component: {fileID: 1207969520}
   m_Layer: 0
   m_Name: Floor (6)
   m_TagString: Untagged
@@ -660,6 +874,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 2
+  lowerSpeed: 2
+--- !u!114 &5665329421859200052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207969513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &1207969520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207969513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1496515929
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +927,8 @@ GameObject:
   - component: {fileID: 1496515932}
   - component: {fileID: 1496515931}
   - component: {fileID: 1496515934}
+  - component: {fileID: 8833345130386880194}
+  - component: {fileID: 1496515936}
   m_Layer: 0
   m_Name: Floor (8)
   m_TagString: Untagged
@@ -770,6 +1026,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 1
+  lowerSpeed: 2
+--- !u!114 &8833345130386880194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496515929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &1496515936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496515929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1550572931
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +1176,8 @@ GameObject:
   - component: {fileID: 1693813665}
   - component: {fileID: 1693813664}
   - component: {fileID: 1693813667}
+  - component: {fileID: 7496993161117607874}
+  - component: {fileID: 1693813669}
   m_Layer: 0
   m_Name: Floor (5)
   m_TagString: Untagged
@@ -977,6 +1275,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 1
+  lowerSpeed: 2
+--- !u!114 &7496993161117607874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693813662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &1693813669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693813662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5159853658843354529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1619,8 @@ GameObject:
   - component: {fileID: 5159853660360025309}
   - component: {fileID: 5159853660360025310}
   - component: {fileID: 1953260048}
+  - component: {fileID: 6054581495737540318}
+  - component: {fileID: 1953260054}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1378,6 +1718,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a60ae8bf7974a88e72a42a32731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorColour: 3
+  lowerSpeed: 2
+--- !u!114 &6054581495737540318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159853660360025296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &1953260054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159853660360025296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5159853660746959423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,7 +1866,7 @@ GameObject:
   - component: {fileID: 5159853660762818796}
   m_Layer: 0
   m_Name: Play Area
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
